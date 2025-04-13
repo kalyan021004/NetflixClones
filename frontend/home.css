@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: auto;
+    background-color: #141414;
+}
+
+
+.background{
+    position:absolute;
+    height: 80vh;
+    width: 100%;
+    filter: brightness(40%);
+
+   
+}
+.main{
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.logo{
+    height: 4vh;
+    width: 10vw;
+}
+.btns button{
+    height: 4vh;
+    width: 10vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 0.5rem;
+    
+    
+
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+
+}
+button i{
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(212, 206, 206);
+
+    .card img{
+
+    }
+}
+.Signin{
+    background-color: red;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+}
+.language{
+    background-color: transparent;
+    color: rgb(236, 212, 212);
+    
+
+
+}
+#language{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    opacity: 1;
+}
+.center-info{
+    position: absolute;
+    top: 30vh;
+    height: 40vh;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 6vh;
+}
+.title{
+    font-size: 7vh;
+    font-weight: 700;
+}
+.info{
+    font-size: 3vh;
+}
+.email{
+    display: flex;
+}
+.email button{
+   margin-left: 10px;
+   padding: 10px;
+   background-color: red;
+   color: white;
+   font-size: 3vh;
+   border: none;
+   border-radius: 0.5rem;
+
+}
+.email button i{
+   
+    color: white;
+    font-size: 3vh;
+ }
+input{
+    background-color: black;
+    border: 1px solid gray;
+    color: gray;
+    padding: 20px;
+    width:20vw;
+    border-radius: 0.5rem;
+}
+.margin{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+   
+    left: 0;
+    z-index: -10;
+    margin-top: -.25rem;
+    border-radius: inherit;
+}
+.trending{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80vh;
+    height: 50vh;
+    width: 80vw;
+   
+   margin: auto;
+   overflow:hidden ;
+
+}
+.trending h2{
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.container{
+    height: 40vh;
+    overflow-y: hidden;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  
+
+    
+
+}
+.card{
+    width: 17vw;
+    height: 30vh;
+    margin: 2vw;
+    
+}
+.card img{
+    width: 16vw;
+    height: 29vh;
+    
+}
+.morereasons{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    height: 50vh;
+    top: 80vh;
+    width: 80vw;
+    margin: auto;
+    
+
+}
+.morereasons h3{
+    padding: 10px;margin: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.boxes{
+    margin: 10px;padding: 10px;
+    display: flex;
+    width: 70vw;
+    height: 40vh;
+    justify-content: space-around;
+
+}
+.box{
+    position:relative ;
+    width:15vw ;
+    height: 40vh;
+    background-color: rgb(43, 8, 58);
+}
+.mr-title{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+.mr-info{
+    font-size: 20px;
+    padding: 10px;
+    color: gray;
+}
+.box img{
+    position: absolute;
+    height: 5vh;
+    width: 4vw;
+    right: 0;
+    bottom: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    position: relative;
+    width: 100%;
+    max-width: 80vw;
+    margin:  auto;
+    top: 90vh;
+    color: white;
+}
+
+.faq-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* FAQ Item */
+.faq-item {
+    background-color: #333;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    background-color: #444;
+}
+
+.icon {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    background-color: #444;
+    padding: 20px;
+    font-size: 16px;
+    display: none;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}
+
+/* Signup Section */
+.signup-section {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    top: 90vh;
+    color: white;
+}
+
+.signup-section p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.signup-form input {
+    width: 320px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    outline: none;
+}
+
+.signup-form button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.signup-form button:hover {
+    background-color: #b20710;
+}
+
+/* Footer Section */
+.footer {
+    position: relative;
+    top: 90vh;
+    padding: 20px 15%;
+    background-color: #141414;
+    color: #757575;
+}
+
+.footer p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Language Selector */
+.language-selector select {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Footer Country */
+.footer-country {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #757575;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .signup-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signup-form input {
+        width: 100%;
+    }
+}
